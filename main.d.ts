@@ -19,14 +19,14 @@ export interface EcommerceData {
   RecentlyViewed: Array<EcommerceProduct>;
 }
 
-declare module "@velaro/velaro-visitor-sdk" {
+declare module "@velaro/visitor-chat" {
   /**
    * The boot method is responsible for bootstrapping Velaro chat with necessary configurations and
    * mounting the chat window to the DOM. This method will also trigger visitor monitoring functions.
    * @param opts Object containing configuration settings.
    * @param callback Will fire when all asynchronous work to mount the component has completed.
    */
-  export async function boot(
+  export function boot(
     opts: BootOptions,
     callback?: Function
   ): Promise<void>;
@@ -48,24 +48,24 @@ declare module "@velaro/velaro-visitor-sdk" {
    * Requests availability information for the configured group from Velaro servers.
    * @param callback Provides boolean containing availability status.
    */
-  export async function isChatAvailable(
+  export function isChatAvailable(
     callback: (isAvailable: boolean) => void
   ): Promise<void>;
 
   /**
    *  Expands the inline chat window.
    */
-  export async function expand(): Promise<void>;
+  export function expand(): Promise<void>;
 
   /**
    * Collapses the inline chat window.
    */
-  export async function collapse(): Promise<void>;
+  export function collapse(): Promise<void>;
 
   /**
    * Pops the chat window out into a new window.
    */
-  export async function popout(): Promise<void>;
+  export function popout(): Promise<void>;
 
   /**
    * Returns true if the chat window is expanded.
@@ -94,7 +94,7 @@ declare module "@velaro/velaro-visitor-sdk" {
    * Creates a conversion record.
    * @param conversion Conversion record to create.
    */
-  export async function addConversion(conversion: {
+  export function addConversion(conversion: {
     conversionId: any;
     dollarAmount: any;
     customData: any;
