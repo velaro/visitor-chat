@@ -1,11 +1,21 @@
 {
   "name": "@velaro/visitor-chat",
   "version": "1.0.0",
-  "description": "",
+  "description": "Velaro package for adding live chat to your website.",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velaro/visitor-chat"
+  },
+  "keywords": [
+    "velaro",
+    "chat"
+  ],
+  "bugs": {
+    "url": "https://github.com/velaro/visitor-chat/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC"
 }
