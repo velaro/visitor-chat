@@ -13,12 +13,6 @@ interface BootOptions {
   cookieDomain?: string;
 }
 
-export interface EcommerceData {
-  CartTotal: number;
-  CartItems: Array<EcommerceCartItem>;
-  RecentlyViewed: Array<EcommerceProduct>;
-}
-
 declare module "@velaro/visitor-chat" {
   /**
    * The boot method is responsible for bootstrapping Velaro chat with necessary configurations and
