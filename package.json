@@ -14,6 +14,7 @@
   "bugs": {
     "url": "https://github.com/velaro/visitor-chat/issues"
   },
+  "homepage": "https://www.velaro.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
